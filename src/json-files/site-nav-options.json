@@ -1,0 +1,11 @@
+{
+    "home":{
+        "path":"/"
+    },
+    "artists":{
+        "path":"/artists"
+    },
+    "About":{
+        "path":"/about"
+    }
+}

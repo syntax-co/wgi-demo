@@ -1,0 +1,39 @@
+
+
+
+.navbar-main-body {
+    @apply
+    w-full h-[10vh] px-40
+    relative
+    ;
+}
+
+
+
+.browser-nav-body {
+    @apply
+    w-1/2 h-full 
+    items-center justify-end
+
+    sm:hidden
+    md:hidden
+    lg:flex
+    xl:flex
+
+    ;
+}
+
+
+
+.mobile-nav-body {
+    @apply
+    w-1/2 h-full 
+    items-center justify-end
+
+
+    sm:flex
+    md:flex
+    lg:hidden
+    xl:hidden
+    ;
+}

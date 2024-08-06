@@ -1,0 +1,316 @@
+
+
+
+
+
+
+
+.artist-page-main {
+    @apply
+    w-full h-[90vh] flex items-center justify-center
+    ;
+}
+
+
+.artist-page-inner {
+    @apply
+    w-full h-5/6 bg-blue rounded-2xl 
+    flex flex-col overflow-scroll relative
+    
+
+    sm:px-4
+    md:px-14
+    lg:px-20
+    xl:px-20
+
+    sm:py-2
+    md:py-4
+    lg:py-5
+    xl:py-6
+
+    ;
+}
+
+.artist-page-title {
+    @apply
+    mb-12 mt-16
+    
+    sm:text-lg
+    md:text-lg
+    lg:text-xl
+    xl:text-2xl
+    ;
+}
+
+.artist-list-body {
+    @apply
+    flex-1 flex flex-wrap relative
+
+    sm:flex-col
+    md:flex-col
+    lg:flex-row
+    xl:flex-row
+    ;
+}
+
+.artist-tile-holder {
+    @apply
+    w-full h-full
+    ;
+}
+
+
+/* 
+ █████╗ ██████╗ ████████╗██╗███████╗████████╗
+██╔══██╗██╔══██╗╚══██╔══╝██║██╔════╝╚══██╔══╝
+███████║██████╔╝   ██║   ██║███████╗   ██║   
+██╔══██║██╔══██╗   ██║   ██║╚════██║   ██║   
+██║  ██║██║  ██║   ██║   ██║███████║   ██║   
+╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝╚══════╝   ╚═╝   
+                                             
+████████╗██╗██╗     ███████╗                 
+╚══██╔══╝██║██║     ██╔════╝                 
+   ██║   ██║██║     █████╗                   
+   ██║   ██║██║     ██╔══╝                   
+   ██║   ██║███████╗███████╗                 
+   ╚═╝   ╚═╝╚══════╝╚══════╝                  
+*/
+
+
+.artist-tile-main-body {
+    @apply
+    mb-10  bg-ivory rounded-md flex
+    relative overflow-hidden 
+
+    sm:flex-col
+    md:flex-col
+    lg:flex-row
+    xl:flex-row
+
+    sm:w-full
+    md:w-full
+    lg:w-[47%]
+    xl:w-[47%]
+
+    sm:h-5/6
+    md:h-5/6
+    lg:h-[300px]
+    xl:h-[300px]
+    ;
+}
+
+
+.atile-image-holder {
+    @apply
+     h-full rounded-l-xl
+
+    sm:w-full
+    md:w-full
+    lg:w-2/6
+    xl:w-2/6
+
+    sm:h-1/2
+    md:h-1/2
+    lg:h-full
+    xl:h-full
+    ;
+}
+
+
+.atile-image {
+    @apply
+    w-full h-full bg-center bg-cover
+
+    sm:bg-top
+    md:bg-top
+    lg:bg-center
+    xl:bg-center
+
+    ;
+}
+
+.atile-content-holder {
+    @apply
+    px-6 flex flex-col
+
+    sm:flex-1
+    md:flex-1
+    lg:h-full
+    xl:h-full
+
+    sm:w-full
+    md:w-full
+    lg:w-4/6
+    xl:w-4/6
+
+    ;
+}
+
+.atile-text {
+    @apply
+    text-sm  my-auto
+
+    ;
+}
+
+
+/* 
+
+ █████╗ ██████╗ ████████╗██╗███████╗████████╗
+██╔══██╗██╔══██╗╚══██╔══╝██║██╔════╝╚══██╔══╝
+███████║██████╔╝   ██║   ██║███████╗   ██║   
+██╔══██║██╔══██╗   ██║   ██║╚════██║   ██║   
+██║  ██║██║  ██║   ██║   ██║███████║   ██║   
+╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝╚══════╝   ╚═╝   
+                                             
+██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗          
+██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝          
+██║ █╗ ██║██║   ██║██████╔╝█████╔╝           
+██║███╗██║██║   ██║██╔══██╗██╔═██╗           
+╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗          
+ ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝           */
+
+
+
+.artist-works-main {
+    @apply
+    w-full h-full rounded-2xl bg-ivory 
+    relative flex  
+
+    sm:flex-col
+    md:flex-col
+    lg:flex-row
+    xl:flex-row
+
+    sm:py-5
+    md:py-7
+    lg:py-10
+    xl:py-10
+
+    sm:px-2
+    md:px-2
+    lg:px-16
+    xl:px-16
+
+    ;
+}
+
+.aw-left-panel {
+    @apply
+    w-2/6 h-full px-10 flex flex-col justify-center
+
+    sm:w-full
+    md:w-full
+    lg:w-2/6
+    xl:w-2/6
+
+    sm:h-2/6
+    md:h-2/6
+    lg:h-full
+    xl:h-full
+
+
+    sm:hidden
+    md:hidden
+    lg:block
+    xl:block
+
+    ;
+}
+
+.aw-text {
+    @apply
+    text-sm mb-10
+
+    
+
+    ;
+}
+
+.aw-right-panel {
+    @apply
+    flex-1 h-full pt-8 flex flex-col
+    overflow-scroll
+
+    
+
+
+    sm:px-4
+    md:px-4
+    lg:px-10
+    xl:px-10
+
+
+    sm:h-4/6
+    md:h-4/6
+    lg:h-full
+    xl:h-full
+    ;
+}
+
+.aw-image-holder {
+    
+}
+
+.mobile-bb-holder {
+    @apply
+    py-4 w-full 
+    justify-end
+    
+    sm:flex
+    md:flex
+    lg:hidden
+    xl:hidden
+    ;
+}
+
+.aw-seperator {
+    @apply
+    rounded-full bg-dark
+
+    sm:bg-transparent
+    md:bg-transparent
+    lg:bg-dark
+    xl:bg-dark
+
+    sm:w-full
+    md:w-full
+    lg:w-[2px]
+    xl:w-[2px]
+
+    sm:h-0
+    md:h-0
+    lg:h-full
+    xl:h-full
+    ;
+}
+
+
+
+.aw-work-image {
+    @apply
+    aspect-square rounded-lg bg-[#686868]
+    mb-12
+    
+    mx-auto
+
+    sm:w-11/12
+    md:w-11/12
+    lg:w-[45%]
+    xl:w-[45%]
+    ;
+}
+
+.bb-1 {
+    @apply
+    flex items-center justify-center bg-pink rounded-md
+    py-1 px-5 cursor-pointer
+    
+    text-2xl
+
+    sm:mr-2
+    md:mr-2
+    lg:mr-0
+    xl:mr-0
+    ;
+}
