@@ -16,6 +16,7 @@ const MobileMenu = ({open,setOpen}) => {
         >
             
                 <MenuGradient key={'menu-grad'}
+                open={open}
                 setOpen={setOpen}
                 />
 
