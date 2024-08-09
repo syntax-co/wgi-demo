@@ -58,7 +58,7 @@ export default function Home() {
                                                                      
       <div className="section-1-body"
       >
-        <div className="w-full h-5/6 bg-pink rounded-2xl relative
+        <div className="w-full h-full bg-pink rounded-2xl relative
         flex items-center justify-center"
         style={{
           boxShadow:'inset 2px 2px 5px #4d4d4d'
@@ -162,38 +162,47 @@ export default function Home() {
             relative"
             >
 
-              <div className="mb-8 text-3xl font-display"
-              >Reviews</div>  
+              <motion.div className="mb-8 text-3xl font-display"
+
+              initial={{opacity:0}}
+              animate={{
+                opacity:inView1? 1:0,
+                transition:{
+                  duration:.5,
+                  delay:1
+                }
+              }}
+              >Reviews</motion.div>  
               
-              <AnimatePresence >
-                <Reviewtile key={'review-tile-1'}
-                _stars={5}
-                data={{
-                  name:'Whitney roberts',
-                  text:"The vibe in here is SO different from that!!! It's safe, welcoming, warm, and feels like if Barbie World had a tattoo shop",
-                  delay:.25
-                }}
-                />
+              
+              <Reviewtile key={'review-tile-1'}
+              _stars={5}
+              data={{
+                name:'Whitney roberts',
+                text:"The vibe in here is SO different from that!!! It's safe, welcoming, warm, and feels like if Barbie World had a tattoo shop",
+                delay:.25
+              }}
+              />
 
-                <Reviewtile key={'review-tile-2'}
-                color='#FFD9E7'
-                _stars={5}
-                data={{
-                  name:'cortny T',
-                  text:"My session with Kat this past week was better than I could have expected!",
-                  delay:.35
-                }}
-                />
+              <Reviewtile key={'review-tile-2'}
+              color='#FFD9E7'
+              _stars={5}
+              data={{
+                name:'cortny T',
+                text:"My session with Kat this past week was better than I could have expected!",
+                delay:.35
+              }}
+              />
 
-                <Reviewtile key={'review-tile-3'}
-                _stars={5}
-                data={{
-                  name:'Casey Williams',
-                  text:"From the moment I stepped in, I felt welcomed by their warm and quirky atmosphere",
-                  delay:.45
-                }}
-                />
-              </AnimatePresence>
+              <Reviewtile key={'review-tile-3'}
+              _stars={5}
+              data={{
+                name:'Casey Williams',
+                text:"From the moment I stepped in, I felt welcomed by their warm and quirky atmosphere",
+                delay:.45
+              }}
+              />
+              
               
 
 

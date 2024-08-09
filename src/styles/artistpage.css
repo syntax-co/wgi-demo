@@ -292,10 +292,16 @@
     aspect-square rounded-lg bg-[#686868]
     mb-12
     
-    mx-auto
+    sm:mx-0
+    md:mx-0
+    lg:mx-auto
+    xl:mx-auto
+    
 
-    sm:w-11/12
-    md:w-11/12
+    
+
+    sm:w-full
+    md:w-full
     lg:w-[45%]
     xl:w-[45%]
     ;

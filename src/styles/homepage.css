@@ -19,7 +19,13 @@
 
 .section-1-body {
     @apply
-    w-full h-[90vh] flex items-center justify-center 
+    w-full h-[80vh] flex items-center justify-center
+
+    sm:mt-0
+    md:mt-0
+    lg:mt-0
+    xl:mt-0
+
     ;
 }
 
