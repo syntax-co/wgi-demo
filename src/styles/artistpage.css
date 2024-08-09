@@ -320,3 +320,38 @@
     xl:mr-0
     ;
 }
+
+.artist-back-button {
+    @apply
+    w-12 h-12 left-10 top-6
+    cursor-pointer
+    static
+    flex items-center justify-center
+
+    sm:mr-auto
+    md:mr-auto
+    lg:mr-0
+    xl:mr-0
+
+    sm:ml-2
+    md:ml-2
+    lg:ml-0
+    xl:ml-0
+
+
+
+    ;
+}
+
+.browser-back-holder {
+    @apply
+    relative
+    
+    mb-10
+    
+    sm:hidden
+    md:hidden
+    lg:block
+    xl:block
+    ;
+}

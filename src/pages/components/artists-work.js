@@ -61,12 +61,17 @@ const ArtistWork = ({goBack,data}) => {
         exit={{opacity:0}}
         >
             
-            <BackButton
-            goBack={goBack}
-            />
+            
 
             <div className="aw-left-panel"
             >
+
+                <div className="browser-back-holder"
+                >
+                    <BackButton
+                    goBack={goBack}
+                    />
+                </div>
 
                 <div className="w-full aspect-square bg-top bg-cover rounded-lg
                 mx-auto mb-10" 
@@ -103,8 +108,11 @@ const ArtistWork = ({goBack,data}) => {
 
                 <div className="h-10 flex items-center"
                 >
+
                     <BookButton />
                 </div>
+
+                
 
             </div>
             
@@ -113,6 +121,10 @@ const ArtistWork = ({goBack,data}) => {
 
             <div className="mobile-bb-holder"
             >
+                <BackButton
+                goBack={goBack}
+                />
+
                 <BookButton 
                 />
             </div>

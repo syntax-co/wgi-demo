@@ -9,8 +9,7 @@ const BackButton = ({goBack}) => {
     const [hovering,setHovering] = useState(false)
 
     return (
-        <div className="w-12 h-12 left-10 top-6 absolute
-        cursor-pointer"
+        <div className="artist-back-button"
         
         onMouseEnter={() => {setHovering(true)}}
         onMouseLeave={() => {setHovering(false)}}
