@@ -33,7 +33,7 @@ const NavItemMobile = ({label,path,gradient=false,setOpen}) => {
                 >
                     <WindupChildren >
                         <Pause ms={1000} />
-                        <Pace ms={300}>
+                        <Pace ms={200}>
                             {label}
                         </Pace>
                         {/* <Pause ms={2000} /> */}
