@@ -56,6 +56,7 @@
 .artist-tile-holder {
     @apply
     w-full h-full
+    flex flex-wrap
     ;
 }
 
@@ -81,6 +82,8 @@
     @apply
     mb-10  bg-ivory rounded-md flex
     relative overflow-hidden 
+
+    ml-auto
 
     sm:flex-col
     md:flex-col

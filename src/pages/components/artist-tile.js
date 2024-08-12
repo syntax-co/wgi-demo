@@ -124,6 +124,10 @@ const ArtistTile = ({viewing,currArtist,dex,changeArtist,data}) => {
 
                     <div className="w-[75px] flex items-center justify-center bg-pink rounded md
                     py-1 mr-2 cursor-pointer button-shadow"
+                    
+                    onClick={() => {
+                        window.location.href = 'https://www.vagaro.com/weirdgirlinkllc1'
+                    }}
                     >
                         Book
                     </div>

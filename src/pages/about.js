@@ -22,9 +22,8 @@ const Aboutpage = () => {
             <div className="w-full h-[80vh] flex items-center justify-center "
             >
 
-                <div className="about-inner-container"
+                <div className="about-inner-container inset-box"
                 style={{
-                    boxShadow:'inset 2px 2px 5px #4d4d4d',
                     borderRadius:'16px'
                 }}
                 >

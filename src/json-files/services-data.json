@@ -1,0 +1,119 @@
+{
+    "tattoos":[
+        {
+            "name":"Touch-up",
+            "price":"$50.00",
+            "description":"Touch up on apprentice tattoos. First touch up is free, after one touch up it is $50 per touch up on small tattoos."
+        },
+        {
+            "name":"Portrait",
+            "price":"$500.00",
+            "description":"A portrait tattoo is a realistic tattoo of a face. It can be illustrative, realistic, black and grey, or color. Prices may vary depending on color and design, portraits start at 5x5 inches \n\n$500 minimum price goes up by size"
+        },
+        {
+            "name":"Thigh tattoo",
+            "price":"$500.00",
+            "description":"Generally thigh tattoos are hip to knee or slightly smaller. Either on the side or front of the thighs. Prices are subject to change depending on size, color, design. They start at $500 and go up in price depending on size and detail."
+        },
+            {"name":"Spine Tattoo",
+            "price":"$450.00",
+            "description":"This is a tattoo that goes down the center of the spine. Prices are subject to change depending on size, color, design."
+        },
+        {
+            "name":"Semipermanent Brow Services",
+            "price":"$400.00",
+            "description":"Ombre Brows, Nano brows and powder brow services offered"
+        },
+        {
+            "name":"Freckle Tattoos",
+            "price":"$300.00",
+            "description":"Semipermanent freckles $300"
+        },
+        {
+            "name":"4x4 Small tattoo",
+            "price":"$200.00",
+            "description":"4x4 Small tattoo, price starts at $200 and may vary based on size and detail"
+        },
+        {
+            "name":"Anime Tattoos",
+            "price":"$150.00",
+            "description":"Anime tattoos start at $150 and go up price based on size and detail"
+        },
+        {
+            "name":"Finger Tattoos",
+            "price":"$100.00",
+            "description":"Finger tattoos start $100 prices vary by size and detail"
+        },
+        {
+            "name":"Hand Tattoo",
+            "price":"$150.00",
+            "description":"Hand tattoos start at $150 and go up in price based on size and detail"
+        },
+        {
+            "name":"Cover Up",
+            "price":"$250.00",
+            "description":"A cover up is a complete covering of a tattoo already on your body. Cover ups may take multiple sessions and prices vary drastically depending on what is being covered and design and color of new tattoo. Cover ups start at $250 no matter how small."
+        },
+        {
+            "name":"6x6 inch tattoo",
+            "price":"$350.00",
+            "description":"These tattoos can be up to six inches, Prices start at $350 may vary depending on color and design."
+        },
+        {
+            "name":"2x2 Inch tattoo",
+            "price":"$100.00",
+            "description":"Starting at $100 for any tattoo 2X2 inches or smaller"
+        }
+        
+    ],
+    "piercings":[
+        {
+            "name":"Ear Lobe Piercing",
+            "price":"Starting at $50.00",
+            "description":"$50 each"
+        },
+        {
+            "name":"Eyebrow Piercing",
+            "price":"Starting at $60.00",
+            "description":"$60 each"
+        },
+        {
+            "name":"Ear Cartilage or Tragus Piercing",
+            "price":"$60.00",
+            "description":"$60 each"
+        },
+        {
+            "name":"Nose / Septum Piercings",
+            "price":"$60.00",
+            "description":"$65 each"
+        },
+        {
+            "name":"Belly Button Piercing",
+            "price":"$60.00",
+            "description":"$60"
+        },
+        {
+            "name":"Lip Piercing",
+            "price":"$60.00",
+            "description":""
+        },
+        {
+            "name":"Tongue Piercing",
+            "price":"$75.00",
+            "description":"Basic tongue piercing with jewelry included"
+        },
+        {
+            "name":"Nipple Piercings",
+            "price":"$120.00",
+            "description":"$120 for both or $60 for one"
+        },
+        {
+            "name":"Bridge Piercing",
+            "price":"$60.00",
+            "description":"Jewelry Included"
+        }
+    ]
+}
+
+
+

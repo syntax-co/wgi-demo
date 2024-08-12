@@ -92,9 +92,8 @@ const Artistspage = () => {
         exit={{opacity:0}}
         >
 
-            <div className="artist-page-inner"
+            <div className="artist-page-inner inset-box"
             style={{
-                boxShadow:'inset 2px 2px 5px #4d4d4d',
                 justifyItems:viewing? 'center':null
             }}
             >

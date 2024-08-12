@@ -7,7 +7,7 @@ import MenuIvory from "./mobile-menu-ivory";
 
 const MobileMenu = ({open,setOpen}) => {
     return (
-        <motion.div className="h-screen w-full  absolute z-[4]"
+        <motion.div className="h-screen w-full  absolute z-[11]"
         
         initial={{right:'-100%'}}
         animate={{

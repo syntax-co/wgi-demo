@@ -14,6 +14,12 @@
 .homepage-main-body {
     @apply
     overflow-x-hidden px-40
+
+    sm:my-0
+    md:my-0
+    lg:my-10
+    xl:my-10
+
     ;
 }
 
