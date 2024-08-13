@@ -125,8 +125,8 @@
     flex-1 text-darkBlue
     px-2 flex items-center
 
-    sm:text-[10px]
-    md:text-[10px]
+    sm:text-[8px]
+    md:text-[8px]
     lg:text-sm
     xl:text-sm
     ;
