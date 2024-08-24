@@ -73,7 +73,7 @@ const ArtistTile = ({viewing,currArtist,dex,changeArtist,data}) => {
                     }}
                     />:
                     <InitialsDisplay 
-                    name={data.name}
+                    name={data&&data.name}
                     />
                 }
             </div>
