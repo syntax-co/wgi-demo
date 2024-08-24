@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FaRegArrowAltCircleLeft } from "react-icons/fa";
+import { IoChevronBack } from "react-icons/io5";;
 
 
 
@@ -21,9 +21,9 @@ const BackButton = ({goBack}) => {
                 translateX:hovering? '-10px':'0px'
             }}
             >
-                <FaRegArrowAltCircleLeft 
-                color="#0A090D"
-                size={40}
+                <IoChevronBack 
+                color="white"
+                size={35}
                 />
             </motion.div>
         </div>

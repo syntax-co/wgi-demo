@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import BackButton from "./back-button";
 import BookButton from "./book-button";
+import InitialsDisplay from "./initials-display";
 
 
 const WorkImage = ({data}) => {
@@ -19,7 +20,7 @@ const WorkImage = ({data}) => {
 }
 
 
-const ArtistWork = ({goBack,data}) => {
+const ArtistWork = ({goBack,data,artist}) => {
 
     const works = [
         'image-1',
@@ -39,12 +40,14 @@ const ArtistWork = ({goBack,data}) => {
     const [text,setText] = useState([])
 
     const getText = async() => {
-        const response = await(await fetch(data.text)).text()
-        setText(response.split('\n'))
+        // console.log(data)
+        // const response = await(await fetch(data.text)).text()
+        // setText(response.split('\n'))
     }
     
     useEffect(() => {
         getText()
+        
     }, []);
 
     return (
@@ -66,19 +69,20 @@ const ArtistWork = ({goBack,data}) => {
             <div className="aw-left-panel"
             >
 
-                <div className="browser-back-holder"
-                >
-                    <BackButton
-                    goBack={goBack}
-                    />
-                </div>
+                
 
-                <div className="w-full aspect-square bg-top bg-cover rounded-lg
-                mx-auto mb-10" 
-                style={{
-                    backgroundImage:`url(${data&&data.image})`
-                }}
-                />
+                
+                {
+                    (data&&data.image)?
+                    <div className="atile-image-works shadow-1"
+                    style={{
+                        backgroundImage:`url(${data.image})`
+                    }}
+                    />:
+                    <InitialsDisplay 
+                    name={artist}
+                    />
+                }
 
                 <div className="aw-text font-primary"
                 >
@@ -106,8 +110,11 @@ const ArtistWork = ({goBack,data}) => {
                     }
                 </div>
 
-                <div className="h-10 flex items-center"
+                <div className="browser-back-holder"
                 >
+                    <BackButton
+                    goBack={goBack}
+                    />
 
                     <BookButton />
                 </div>
@@ -121,12 +128,25 @@ const ArtistWork = ({goBack,data}) => {
 
             <div className="mobile-bb-holder"
             >
-                <BackButton
-                goBack={goBack}
+                <div className="w-[75px] aspect-square
+                bg-center bg-cover rounded-full ml-10 shadow-1" 
+                style={{
+                    backgroundImage:`url(${data&&data.image})`
+                }}
                 />
+                
+                <div className="h-10 flex items-center ml-auto"
+                >
+                    <BackButton
+                    goBack={goBack}
+                    />
+                </div>
+                <div className="h-10 flex items-center ml-4"
+                >
 
-                <BookButton 
-                />
+                    <BookButton 
+                    />
+                </div>
             </div>
 
             <div className="aw-right-panel"

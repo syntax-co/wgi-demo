@@ -40,10 +40,7 @@ body {
 
 .page-padding {
   @apply
-    sm:px-6
-    md:px-6 
-    lg:px-40
-    xl:px-40
+  px-[6%]
   ;
 }
 

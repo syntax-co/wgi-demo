@@ -1,5 +1,6 @@
 import {motion, useAnimationControls } from "framer-motion";
 import { useEffect, useState } from "react";
+import InitialsDisplay from "./initials-display";
 
 
 
@@ -10,8 +11,10 @@ const ArtistTile = ({viewing,currArtist,dex,changeArtist,data}) => {
     const [text,setText] = useState([])
 
     const getText = async() => {
-        const response = await(await fetch(data.text)).text()
-        setText(response.split('\n'))
+        if (data.text) {
+            const response = await(await fetch(data.text)).text()
+            setText(response.split('\n'))
+        }
     }
 
     const fadein = () => {
@@ -41,7 +44,6 @@ const ArtistTile = ({viewing,currArtist,dex,changeArtist,data}) => {
 
 
     useEffect(() => {
-        console.log(data)
         fadein()
         getText()
     }, [viewing]);
@@ -64,11 +66,14 @@ const ArtistTile = ({viewing,currArtist,dex,changeArtist,data}) => {
             <div className="atile-image-holder"
             >
                 {
-                    data&&
-                    <div className="atile-image"
+                    (data&&data.image)?
+                    <div className="atile-image shadow-1"
                     style={{
                         backgroundImage:`url(${data.image})`
                     }}
+                    />:
+                    <InitialsDisplay 
+                    name={data.name}
                     />
                 }
             </div>
@@ -126,7 +131,7 @@ const ArtistTile = ({viewing,currArtist,dex,changeArtist,data}) => {
                     py-1 mr-2 cursor-pointer button-shadow"
                     
                     onClick={() => {
-                        window.location.href = 'https://www.vagaro.com/weirdgirlinkllc1'
+                        window.location.href = data.bookinglink
                     }}
                     >
                         Book

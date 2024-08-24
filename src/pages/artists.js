@@ -12,35 +12,35 @@ import ArtistWork from "./components/artists-work";
 const Artistspage = () => {
 
     const artistdata = {
-        'artists-1':{
-            'name':'Cutie Magee 1',
-            'image':'./images/person-1.jpg',
-            'text':'./texts/text-placeholder-1.txt',
-            'bookinglink':''
+        'Lexi Tatts':{
+            'image':'./images/artists/Lexi-Tatts.jpeg',
+            'text':'',
+            'bookinglink':'https://www.vagaro.com/weirdgirlinkllc1/staff'
         },
-        'artists-2':{
-            'name':'Cutie Magee 2',
-            'image':'./images/person-2.jpg',
-            'text':'./texts/text-placeholder-1.txt',
-            'bookinglink':''
+        'Kat Shroth':{
+            'image':'',
+            'text':'',
+            'bookinglink':'https://www.vagaro.com/weirdgirlinkllc1/staff'
         },
-        'artists-3':{
-            'name':'Cutie Magee 3',
-            'image':'./images/person-3.jpg',
-            'text':'./texts/text-placeholder-1.txt',
-            'bookinglink':''
+        'Vee Baby':{
+            'image':'./images/artists/Vee-Baby.jpeg',
+            'text':'',
+            'bookinglink':'https://www.vagaro.com/weirdgirlinkllc1/staff'
         },
-        'artists-4':{
-            'name':'Cutie Magee 4',
-            'image':'./images/person-4.jpg',
-            'text':'./texts/text-placeholder-1.txt',
-            'bookinglink':''
+        'Squid R':{
+            'image':'./images/artists/Squid-R.jpg',
+            'text':'',
+            'bookinglink':'https://www.vagaro.com/weirdgirlinkllc1/staff'
         },
-        'artists-5':{
-            'name':'Cutie Magee 5',
-            'image':'./images/person-5.jpg',
-            'text':'./texts/text-placeholder-1.txt',
-            'bookinglink':''
+        'Orion Erana':{
+            'image':'./images/artists/Orion-Erana.jpg',
+            'text':'',
+            'bookinglink':'https://www.vagaro.com/weirdgirlinkllc1/staff'
+        },
+        'Chris Moya':{
+            'image':'./images/artists/Chris-Moya.jpg',
+            'text':'',
+            'bookinglink':'https://www.vagaro.com/weirdgirlinkllc1/staff'
         }
     }
 
@@ -54,21 +54,17 @@ const Artistspage = () => {
 
         if (artist!='none') {
 
-            const keys = Object.keys(artistdata);
-            var found;
-            keys.forEach((item,dex) => {
-                const _data = artistdata[item]
-                if (artist == _data.name) {
-                    found = item
-                }
-            })
-            
+            // const keys = Object.keys(artistdata);
+            // var found;
+            // if (keys.includes(artist)) {
+            //     found=
+            // }
             setCurrArtist(artist);
-            setArtistKey(found)
+            setArtistKey(artist)
             setViewing(true);
         } else {
             setCurrArtist('none');
-            setArtistKey('')
+            setArtistKey()
             setViewing(false);
         }
     }
@@ -134,6 +130,7 @@ const Artistspage = () => {
                                     data={{
                                         dex:dex,
                                         aniDelay:.25 + (dex*.25),
+                                        name:key,
                                         ..._data
                                     }}
                                     />
@@ -150,6 +147,7 @@ const Artistspage = () => {
                     <ArtistWork key={'testing-key'}
                     goBack={goBack}
                     data={artistdata[artistKey]}
+                    artist={artistKey}
                     />
                 }
                 </AnimatePresence>
